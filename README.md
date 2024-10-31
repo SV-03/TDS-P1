@@ -14,7 +14,7 @@ This code collects user data and repository information from GitHub, focusing on
 - The code systematically collects user and repository data, handling pagination and rate limiting, and saves the cleaned, structured data to CSV files for analysis.
 - Error Handling: It checks response status for each request, printing errors if encountered, and manages edge cases like missing license data.
 - Output: Two CSV files, users.csv and repositories.csv, ready for further analysis.
--
+
 - Here’s how it was done:
 
 1. User Data Collection (users.csv)
@@ -33,7 +33,7 @@ The first part of the script gathers user profile information:
 
 The second part of the script gathers repository information for each user from 'users.csv':
 
-- Loading User Data**: It reads 'users.csv' and filters unique user logins.
+- Loading User Data: It reads 'users.csv' and filters unique user logins.
 - Pagination and Querying Repositories:
   - For each user, it queries up to 500 repositories, sorted by the most recently pushed.
   - It paginates through results, processing up to 100 repositories per page.
