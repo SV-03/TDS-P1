@@ -38,5 +38,5 @@ The second part of the script gathers repository information for each user from 
   - For each user, it queries up to 500 repositories, sorted by the most recently pushed.
   - It paginates through results, processing up to 100 repositories per page.
   - Each repository's details, including name, creation date, stars, watchers, language, project and wiki settings, and license, are recorded.
-- Rate Limiting**: The script uses 'time.sleep(1)' between requests to avoid GitHub’s rate-limiting restrictions.
-- Data Storage**: Finally, the repository data is converted to a DataFrame and saved to 'repositories.csv'.
+- Rate Limiting: The script uses 'time.sleep(1)' between requests to avoid GitHub’s rate-limiting restrictions.
+- Data Storage: Finally, the repository data is converted to a DataFrame and saved to 'repositories.csv'.
